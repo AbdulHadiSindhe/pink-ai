@@ -1,384 +1,411 @@
 <!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" class="transition-colors duration-200">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Assistant - Your Intelligent Partner</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<script>
-tailwind.config = {
-theme: {
-extend: {
-colors: {
-primary: '#2563eb',
-secondary: '#ec4899'
-},
-borderRadius: {
-'none': '0px',
-'sm': '4px',
-DEFAULT: '8px',
-'md': '12px',
-'lg': '16px',
-'xl': '20px',
-'2xl': '24px',
-'3xl': '32px',
-'full': '9999px',
-'button': '8px'
-}
-}
-}
-}
-</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
-<style>
-:where([class^="ri-"])::before { content: "\f3c2"; }
-body { font-family: 'Inter', sans-serif; }
-@keyframes float {
-0% { transform: translateY(0px); }
-50% { transform: translateY(-10px); }
-100% { transform: translateY(0px); }
-}
-.animate-float {
-animation: float 3s ease-in-out infinite;
-}
-.transition-all {
-transition: all 0.3s ease;
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A . H . S</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+<html lang="en" class="transition-colors duration-200">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI MADE BY A . H . S</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {}
+      }
+    }
+  </script>
+  <style>
+    :root {
+      color-scheme: light dark;
+    }
+    @keyframes slideUp {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    .animate-slide-up {
+      animation: slideUp 0.4s ease-out forwards;
+    }
+    .custom-gradient {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+    .message-shadow {
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+    .dark .message-shadow {
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+    .dark .custom-scrollbar::-webkit-scrollbar-track {
+      background: #374151;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 3px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: #666;
+    }
+  </style>
 </head>
-<body class="bg-white" onload="AOS.init({duration: 1000, once: true})">
-<header class="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
-<nav class="container mx-auto px-6 h-20 flex items-center justify-between">
-<a href="#" class="flex items-center space-x-3">
-<img src="https://static.readdy.ai/image/ee1a9211f9c653e4ac893545f53821a6/6d2aadb5e2bfe5d10f5e6522d8784159.png" class="w-10 h-10" alt="A.H.S Logo">
-<span class="font-['Pacifico'] text-2xl text-primary">A.H.S</span>
-</a>
-<div class="hidden md:flex items-center space-x-8">
-<a href="#features" class="text-gray-600 hover:text-primary">Features</a>
-<a href="#features-showcase" class="text-gray-600 hover:text-primary">Showcase</a>
-<a href="#testimonials" class="text-gray-600 hover:text-primary">Testimonials</a>
-</div>
-<div class="flex items-center space-x-4">
-<a href="https://sites.google.com/view/abdulhadiai/ai?authuser=0" target="_blank">
-<button class="bg-primary text-white px-6 py-2 rounded-button hover:bg-primary/90">Get Started</button>
-</a>
-</div>
-</nav>
-</header>
-<main class="pt-20">
-<section class="relative min-h-[80vh] flex items-center" style="background-image: url('https://public.readdy.ai/ai/img_res/4f0a051688068c5f9c57f27395ad77bb.jpg'); background-size: cover; background-position: center;">
-<div class="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-transparent"></div>
-<div class="container mx-auto px-6 relative">
-<div class="max-w-2xl">
-<h1 class="text-6xl font-bold leading-tight mb-6" data-aos="fade-up">
-Transform Your Work with AI Intelligence
-</h1>
-<p class="text-xl text-gray-600 mb-8" data-aos="fade-up" data-aos-delay="100">
-Experience the next generation of AI assistance that understands, learns, and evolves with your needs. Boost productivity and innovation with our cutting-edge AI solution.
-</p>
-<div class="flex items-center space-x-4" data-aos="fade-up" data-aos-delay="200">
-<a href="https://sites.google.com/view/abdulhadiai/ai?authuser=0" target="_blank">
-<button class="bg-primary text-white px-8 py-4 rounded-button text-lg hover:bg-primary/90 transition-transform hover:scale-105">
-Try Now
-</button>
-</a>
-<button class="bg-secondary text-white px-8 py-4 rounded-button text-lg hover:bg-secondary/90 transition-transform hover:scale-105 flex items-center">
-<i class="ri-image-line mr-2"></i>
-Generate Image
-</button>
-</div>
-</div>
-</div>
-</section>
-<section id="features" class="py-20 bg-gradient-to-br from-blue-50 to-pink-50">
-<div class="container mx-auto px-6">
-<div class="text-center mb-16">
-<h2 class="text-4xl font-bold mb-4" data-aos="fade-up">Powerful Features</h2>
-<p class="text-xl text-gray-600" data-aos="fade-up" data-aos-delay="100">Discover what makes our AI assistant unique</p>
-</div>
-<div class="grid md:grid-cols-3 gap-8">
-<div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-all hover:-translate-y-1" data-aos="fade-up">
-<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
-<i class="ri-brain-line text-primary ri-2x"></i>
-</div>
-<h3 class="text-xl font-semibold mb-4">Advanced Learning</h3>
-<p class="text-gray-600">Our AI continuously learns from interactions, becoming more personalized and efficient over time.</p>
-</div>
-<div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-all hover:-translate-y-1" data-aos="fade-up">
-<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
-<i class="ri-shield-check-line text-primary ri-2x"></i>
-</div>
-<h3 class="text-xl font-semibold mb-4">Enterprise Security</h3>
-<p class="text-gray-600">Bank-grade encryption and security measures to protect your sensitive data.</p>
-</div>
-<div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-all hover:-translate-y-1" data-aos="fade-up">
-<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
-<i class="ri-customer-service-2-line text-primary ri-2x"></i>
-</div>
-<h3 class="text-xl font-semibold mb-4">24/7 Support</h3>
-<p class="text-gray-600">Round-the-clock assistance whenever you need help or guidance.</p>
-</div>
-</div>
-</div>
-</section>
-<section id="testimonials" class="py-20 bg-gradient-to-br from-pink-50 to-blue-50">
-<div class="container mx-auto px-6">
-<div class="text-center mb-16">
-<h2 class="text-4xl font-bold mb-4">What Our Users Say</h2>
-<p class="text-xl text-gray-600">Trusted by thousands of satisfied customers</p>
-</div>
-<div class="grid md:grid-cols-3 gap-8">
-<div class="bg-white p-8 rounded-lg shadow-sm" data-aos="fade-up" data-aos-delay="100">
-<div class="flex items-center mb-6">
-<img src="https://public.readdy.ai/ai/img_res/7e52e538a0b131ec782fe50bb7e54959.jpg" class="w-12 h-12 rounded-full object-cover" alt="Sarah Mitchell">
-<div class="ml-4">
-<h4 class="font-semibold">Sarah Mitchell</h4>
-<p class="text-gray-600">Product Manager</p>
-</div>
-</div>
-<p class="text-gray-600">"This AI assistant has revolutionized how our team handles daily tasks. The efficiency gains are remarkable."</p>
-</div>
-<div class="bg-white p-8 rounded-lg shadow-sm" data-aos="fade-up" data-aos-delay="100">
-<div class="flex items-center mb-6">
-<img src="https://public.readdy.ai/ai/img_res/56d75405371c17ab406a75bab7bb8f64.jpg" class="w-12 h-12 rounded-full object-cover" alt="Michael Chen">
-<div class="ml-4">
-<h4 class="font-semibold">Michael Chen</h4>
-<p class="text-gray-600">CEO</p>
-</div>
-</div>
-<p class="text-gray-600">"The level of customization and learning capabilities has exceeded our expectations. A game-changer for our business."</p>
-</div>
-<div class="bg-white p-8 rounded-lg shadow-sm" data-aos="fade-up" data-aos-delay="100">
-<div class="flex items-center mb-6">
-<img src="https://public.readdy.ai/ai/img_res/49fd4ad59d61cac365c2c7629ac39f5e.jpg" class="w-12 h-12 rounded-full object-cover" alt="Emily Rodriguez">
-<div class="ml-4">
-<h4 class="font-semibold">Emily Rodriguez</h4>
-<p class="text-gray-600">Tech Lead</p>
-</div>
-</div>
-<p class="text-gray-600">"The integration was seamless, and the support team has been exceptional throughout our journey."</p>
-</div>
-</div>
-</div>
-</section>
-<section id="features-showcase" class="py-20">
-<div class="container mx-auto px-6">
-<div class="text-center mb-16">
-<h2 class="text-4xl font-bold mb-4">Everything You Need - 100% Free</h2>
-<p class="text-xl text-gray-600">Access all features without any cost</p>
-</div>
-<div class="grid md:grid-cols-3 gap-8">
-<div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-all hover:-translate-y-1" data-aos="fade-up">
-<img src="https://public.readdy.ai/ai/img_res/87353384cc67ee5e2a32787795214293.jpg" alt="AI Analysis" class="w-full h-48 object-cover rounded-lg mb-6 animate-float">
-<h3 class="text-xl font-semibold mb-4">Smart Analysis</h3>
-<p class="text-gray-600">Advanced AI algorithms to analyze and process your data with precision</p>
-</div>
-<div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-all hover:-translate-y-1" data-aos="fade-up">
-<img src="https://public.readdy.ai/ai/img_res/cf572cc6e515714d271837528a8bd47b.jpg" alt="Automation" class="w-full h-48 object-cover rounded-lg mb-6">
-<h3 class="text-xl font-semibold mb-4">Full Automation</h3>
-<p class="text-gray-600">Streamline your workflow with powerful automation tools</p>
-</div>
-<div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-all hover:-translate-y-1" data-aos="fade-up">
-<img src="https://public.readdy.ai/ai/img_res/96f90ffa27969288ea83791a2532c67d.jpg" alt="Collaboration" class="w-full h-48 object-cover rounded-lg mb-6">
-<h3 class="text-xl font-semibold mb-4">Team Collaboration</h3>
-<p class="text-gray-600">Work together seamlessly with integrated collaboration features</p>
-</div>
-</div>
-</div>
-</section>
-<section class="py-20 bg-gradient-to-r from-blue-50 via-pink-50 to-blue-50">
-<div class="container mx-auto px-6">
-<div class="max-w-4xl mx-auto text-center">
-<h2 class="text-4xl font-bold mb-6">Ready to Transform Your Work?</h2>
-<p class="text-xl text-gray-600 mb-8">Join thousands of satisfied users who have already revolutionized their workflow with our AI assistant.</p>
-<a href="https://sites.google.com/view/abdulhadiai/ai?authuser=0" target="_blank">
-<button class="bg-primary text-white px-8 py-4 rounded-button text-lg hover:bg-primary/90 transition-all hover:scale-105 hover:shadow-lg" data-aos="zoom-in">Try Now</button>
-</a>
-</div>
-</div>
-</section>
-</main>
-<footer class="bg-gradient-to-br from-blue-50 to-pink-50 pt-20 pb-10">
-<div class="container mx-auto px-6">
-<div class="grid md:grid-cols-4 gap-8 mb-16">
-<div>
-<a href="#" class="flex items-center space-x-3 mb-6">
-<img src="https://static.readdy.ai/image/ee1a9211f9c653e4ac893545f53821a6/6d2aadb5e2bfe5d10f5e6522d8784159.png" class="w-10 h-10" alt="A.H.S Logo">
-<span class="font-['Pacifico'] text-2xl text-primary">A.H.S</span>
-</a>
-<p class="text-gray-600 mb-6">Empowering businesses with intelligent AI solutions.</p>
-<div class="flex space-x-4">
-<a href="#" class="text-gray-400 hover:text-primary">
-<i class="ri-twitter-fill ri-lg"></i>
-</a>
-<a href="#" class="text-gray-400 hover:text-primary">
-<i class="ri-linkedin-fill ri-lg"></i>
-</a>
-<a href="#" class="text-gray-400 hover:text-primary">
-<i class="ri-facebook-fill ri-lg"></i>
-</a>
-</div>
-</div>
-<div>
-<h4 class="font-semibold mb-6">Product</h4>
-<ul class="space-y-4">
-<li><a href="#" class="text-gray-600 hover:text-primary">Features</a></li>
-<li><a href="#" class="text-gray-600 hover:text-primary">Pricing</a></li>
-<li><a href="#" class="text-gray-600 hover:text-primary">Security</a></li>
-<li><a href="#" class="text-gray-600 hover:text-primary">Enterprise</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-semibold mb-6">Company</h4>
-<ul class="space-y-4">
-<li><a href="#" class="text-gray-600 hover:text-primary">About</a></li>
-<li><a href="#" class="text-gray-600 hover:text-primary">Careers</a></li>
-<li><a href="#" class="text-gray-600 hover:text-primary">Blog</a></li>
-<li><a href="#" class="text-gray-600 hover:text-primary">Contact</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-semibold mb-6">Follow Us</h4>
-<p class="text-gray-600 mb-4">Stay connected on social media</p>
-<div class="flex items-center space-x-4">
-<a href="#" class="text-gray-400 hover:text-primary">
-<i class="ri-twitter-fill ri-lg"></i>
-</a>
-<a href="#" class="text-gray-400 hover:text-primary">
-<i class="ri-linkedin-fill ri-lg"></i>
-</a>
-<a href="#" class="text-gray-400 hover:text-primary">
-<i class="ri-facebook-fill ri-lg"></i>
-</a>
-</div>
-</div>
-</div>
-<div class="border-t border-gray-200 pt-8">
-<div class="flex flex-col md:flex-row justify-between items-center">
-<p class="text-gray-600 text-sm">© 2025 All rights reserved.</p>
-<div class="flex space-x-6 mt-4 md:mt-0">
-<a href="#" class="text-gray-600 hover:text-primary text-sm">Privacy Policy</a>
-<a href="#" class="text-gray-600 hover:text-primary text-sm">Terms of Service</a>
-<a href="#" class="text-gray-600 hover:text-primary text-sm">Cookie Policy</a>
-</div>
-</div>
-</div>
-</div>
-</footer>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-const header = document.querySelector('header');
-window.addEventListener('scroll', () => {
-if (window.scrollY > 0) {
-header.classList.add('shadow-sm');
-} else {
-header.classList.remove('shadow-sm');
-}
-});
-const generateImageBtn = document.querySelector('button:has(.ri-image-line)');
-generateImageBtn.addEventListener('click', () => {
-const modal = document.createElement('div');
-modal.className = 'fixed inset-0 bg-black/50 flex items-center justify-center z-50';
-modal.innerHTML = `
-<div class="bg-white rounded-lg p-8 max-w-2xl w-full mx-4">
-<div class="flex justify-between items-center mb-6">
-<h3 class="text-2xl font-bold">Generate Image</h3>
-<button class="text-gray-400 hover:text-gray-600">
-<i class="ri-close-line ri-2x"></i>
-</button>
-</div>
-<div class="mb-6">
-<textarea class="w-full h-32 p-4 border border-gray-200 rounded-lg focus:outline-none focus:border-primary" placeholder="Describe the image you want to generate..."></textarea>
-</div>
-<div class="flex justify-between items-center">
-<div class="flex space-x-4">
-<select class="px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:border-primary">
-<option value="1024x1024">1024x1024</option>
-<option value="1024x768">1024x768</option>
-<option value="768x1024">768x1024</option>
-</select>
-<select class="px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:border-primary">
-<option value="1">1 Image</option>
-<option value="2">2 Images</option>
-<option value="4">4 Images</option>
-</select>
-</div>
-<button class="bg-primary text-white px-6 py-2 rounded-button hover:bg-primary/90">Generate</button>
-</div>
-<div class="mt-6 grid grid-cols-2 gap-4" id="generatedImages">
-</div>
-</div>
-`;
-document.body.appendChild(modal);
-const closeBtn = modal.querySelector('button:has(.ri-close-line)');
-closeBtn.addEventListener('click', () => modal.remove());
-modal.addEventListener('click', (e) => {
-if (e.target === modal) modal.remove();
-});
-const generateBtn = modal.querySelector('button.bg-primary');
-const imagesContainer = modal.querySelector('#generatedImages');
-generateBtn.addEventListener('click', () => {
-const prompt = modal.querySelector('textarea').value;
-if (prompt) {
-generateBtn.disabled = true;
-generateBtn.innerHTML = '<i class="ri-loader-4-line animate-spin"></i> Generating...';
-setTimeout(() => {
-const imageUrl = `https://readdy.ai/api/search-image?query=${encodeURIComponent(prompt)}&width=512&height=512&seq=${Date.now()}&orientation=squarish`;
-const img = document.createElement('img');
-img.src = imageUrl;
-img.className = 'w-full h-64 object-cover rounded-lg';
-imagesContainer.appendChild(img);
-generateBtn.disabled = false;
-generateBtn.innerHTML = 'Generate';
-}, 2000);
-}
-});
-});
-const watchDemoBtn = document.querySelector('button:has(.ri-play-circle-line)');
-watchDemoBtn.addEventListener('click', () => {
-const modal = document.createElement('div');
-modal.className = 'fixed inset-0 bg-black/50 flex items-center justify-center z-50';
-modal.innerHTML = `
-<div class="bg-white rounded-lg p-8 max-w-2xl w-full mx-4">
-<div class="flex justify-between items-center mb-6">
-<h3 class="text-2xl font-bold">Watch Demo</h3>
-<button class="text-gray-400 hover:text-gray-600">
-<i class="ri-close-line ri-2x"></i>
-</button>
-</div>
-<div class="aspect-video bg-gray-100 rounded-lg flex items-center justify-center">
-<i class="ri-video-line ri-3x text-gray-400"></i>
-</div>
-</div>
-`;
-document.body.appendChild(modal);
-modal.querySelector('button').addEventListener('click', () => modal.remove());
-modal.addEventListener('click', (e) => {
-if (e.target === modal) modal.remove();
-});
-});
-const form = document.querySelector('footer form');
-form.addEventListener('submit', (e) => {
-e.preventDefault();
-const email = form.querySelector('input[type="email"]').value;
-if (email) {
-const toast = document.createElement('div');
-toast.className = 'fixed bottom-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg transform transition-transform duration-300 translate-y-0';
-toast.textContent = 'Thank you for subscribing!';
-document.body.appendChild(toast);
-setTimeout(() => {
-toast.classList.add('translate-y-full');
-setTimeout(() => toast.remove(), 300);
-}, 3000);
-form.reset();
-}
-});
-});
-</script>
+<body class="bg-gray-50 dark:bg-gray-900 flex flex-col min-h-screen transition-colors duration-200">
+  <nav class="custom-gradient shadow-lg sticky top-0 z-50 w-full">
+    <div class="container mx-auto px-4 py-2">
+      <div class="flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-white text-center tracking-wide">
+          AI BY A . H . S
+        </h1>
+        <button
+          id="themeToggle"
+          class="p-2 rounded-full text-white hover:opacity-90 transition-opacity duration-200 flex items-center justify-center"
+          aria-label="Toggle theme"
+        >
+          <!-- Sun icon -->
+          <svg class="block dark:hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon icon -->
+          <svg class="hidden dark:block" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="flex-grow container mx-auto px-4 py-2 dark:text-white min-h-0">
+    <div class="h-[calc(100vh-7rem)] bg-white dark:bg-gray-800 rounded-xl shadow-lg">
+      <div id="chatbox" class="flex flex-col space-y-4 h-[calc(100%-4rem)] overflow-y-auto custom-scrollbar px-4 py-4">
+      </div>
+    </div>
+  </main>
+
+  <footer class="fixed bottom-0 left-0 right-0 bg-gray-50 dark:bg-gray-900 h-16">
+    <div class="container h-full mx-auto px-4 py-2">
+      <div class="h-full">
+        <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg h-full">
+          <div class="flex items-center gap-2 h-full px-4">
+            <button
+              id="micButton"
+              class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-300 transition-colors duration-200 flex items-center justify-center"
+              aria-label="Start voice input"
+            >
+              <!-- Mic icon -->
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                <line x1="12" y1="19" x2="12" y2="23"></line>
+                <line x1="8" y1="23" x2="16" y2="23"></line>
+              </svg>
+            </button>
+            <input
+              class="flex-grow h-12 bg-transparent dark:text-white outline-none"
+              id="messageInput"
+              type="text"
+              placeholder="Type your message..."
+            />
+            <button
+              id="sendButton"
+              class="p-2 rounded-lg custom-gradient text-white hover:opacity-90 transition-colors duration-200 flex items-center justify-center"
+              aria-label="Send message"
+            >
+              Send
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const chatbox = document.getElementById("chatbox");
+    const messageInput = document.getElementById("messageInput");
+    const sendButton = document.getElementById("sendButton");
+    const chatId = crypto.randomUUID();
+    let websocket = null;
+
+    let receiving = false;
+    const systemPrompt = "You are Abdul Hadi, a street racer and skilled mechanic known for your loyalty to family and friends.";
+
+    function createMessageElement(text, alignment) {
+      const messageContainer = document.createElement("div");
+      messageContainer.className = `flex flex-col ${alignment === "left" ? "items-start" : "items-end"} w-full`;
+
+      const messageWrapper = document.createElement("div");
+      messageWrapper.className = "animate-slide-up max-w-[95%]";
+
+      const messageElement = document.createElement("div");
+      messageElement.className = `message-shadow ${
+        alignment === "left" 
+          ? "bg-gray-50 dark:bg-gray-700 dark:text-white text-gray-800 rounded-tl-3xl rounded-tr-3xl rounded-br-3xl px-6 py-4" 
+          : "custom-gradient text-white rounded-tl-3xl rounded-tr-3xl rounded-bl-3xl px-6 py-4"
+      }`;
+      messageElement.style.wordBreak = "break-word";
+      messageElement.textContent = text;
+      messageWrapper.appendChild(messageElement);
+      messageContainer.appendChild(messageWrapper);
+
+      // Add speaker button only for AI messages (left-aligned)
+      if (alignment === "left") {
+        const speakerButton = document.createElement("button");
+        speakerButton.className = "mt-2 custom-gradient p-2 rounded-full text-white hover:opacity-90 transition-opacity duration-200 shadow-md flex items-center justify-center";
+        speakerButton.setAttribute("aria-label", "Read message aloud");
+        
+        // Speaker icon
+        const speakerIcon = `
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+          </svg>
+        `;
+
+        // Stop icon
+        const stopIcon = `
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+          </svg>
+        `;
+
+        // Error icon
+        const errorIcon = `
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="15" y1="9" x2="9" y2="15"></line>
+            <line x1="9" y1="9" x2="15" y2="15"></line>
+          </svg>
+        `;
+
+        speakerButton.innerHTML = speakerIcon;
+        
+        let isPlaying = false;
+        let utterance = null;
+
+        speakerButton.addEventListener("click", () => {
+          if (isPlaying) {
+            window.speechSynthesis.cancel();
+            isPlaying = false;
+            speakerButton.innerHTML = speakerIcon;
+            return;
+          }
+
+          try {
+            // Cancel any ongoing speech
+            window.speechSynthesis.cancel();
+            
+            utterance = new SpeechSynthesisUtterance(messageElement.textContent);
+            utterance.rate = 1;
+            utterance.pitch = 1;
+            
+            // Update button while speaking
+            utterance.onstart = () => {
+              isPlaying = true;
+              speakerButton.innerHTML = stopIcon;
+            };
+            
+            // Reset button when done
+            utterance.onend = () => {
+              isPlaying = false;
+              speakerButton.innerHTML = speakerIcon;
+            };
+
+            // Handle errors
+            utterance.onerror = () => {
+              isPlaying = false;
+              speakerButton.innerHTML = errorIcon;
+              setTimeout(() => {
+                speakerButton.innerHTML = speakerIcon;
+              }, 2000);
+            };
+            
+            window.speechSynthesis.speak(utterance);
+          } catch (error) {
+            console.error('Speech synthesis error:', error);
+            speakerButton.innerHTML = errorIcon;
+            setTimeout(() => {
+              speakerButton.innerHTML = speakerIcon;
+            }, 2000);
+          }
+        });
+        
+        messageContainer.appendChild(speakerButton);
+      }
+
+      return messageContainer;
+    }
+
+    function connectWebSocket(message, initChat) {
+      receiving = true;
+      sendButton.innerHTML = `
+        <span>Sending...</span>
+        <svg class="animate-spin" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10" stroke-opacity="0.25"/>
+          <path d="M12 2a10 10 0 0 1 10 10" stroke-opacity="0.75"/>
+        </svg>
+      `;
+      
+      const url = "wss://backend.buildpicoapps.com/api/chatbot/chat";
+      websocket = new WebSocket(url);
+
+      websocket.addEventListener("open", () => {
+        websocket.send(
+          JSON.stringify({
+            chatId: chatId,
+            appId: "clearly-common",
+            systemPrompt: systemPrompt,
+            message: initChat ? "Welcome to AI by A . H . S" : message,
+          })
+        );
+      });
+
+      const messageElement = createMessageElement("", "left");
+      chatbox.appendChild(messageElement);
+
+      websocket.onmessage = (event) => {
+        const textElement = messageElement.querySelector('.message-shadow');
+        if (textElement) {
+          textElement.textContent += event.data;
+          chatbox.scrollTop = chatbox.scrollHeight;
+        }
+      };
+
+      websocket.onclose = (event) => {
+        if (event.code === 1000) {
+          receiving = false;
+          sendButton.innerHTML = "Send";
+        } else {
+          const textElement = messageElement.querySelector('.message-shadow');
+          if (textElement) {
+            textElement.textContent += "Error getting response from server. Refresh the page and try again.";
+            chatbox.scrollTop = chatbox.scrollHeight;
+          }
+          receiving = false;
+          sendButton.innerHTML = "Send";
+        }
+      };
+    }
+
+    function createWelcomeMessage() {
+      connectWebSocket("", true);
+    }
+
+    sendButton.addEventListener("click", () => {
+      if (!receiving && messageInput.value.trim() !== "") {
+        const messageText = messageInput.value.trim();
+        messageInput.value = "";
+        const messageElement = createMessageElement(messageText, "right");
+        chatbox.appendChild(messageElement);
+        chatbox.scrollTop = chatbox.scrollHeight;
+
+        connectWebSocket(messageText, false);
+      } else if (receiving && websocket) {
+        websocket.close(1000);
+        receiving = false;
+        sendButton.innerHTML = `
+          <span>Send</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+        `;
+      }
+    });
+
+    messageInput.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" && !receiving && messageInput.value.trim() !== "") {
+        event.preventDefault();
+        sendButton.click();
+      }
+    });
+
+    function initializeTheme() {
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    }
+
+    initializeTheme();
+
+    document.getElementById('themeToggle').addEventListener('click', () => {
+      const isDark = document.documentElement.classList.toggle('dark');
+      localStorage.theme = isDark ? 'dark' : 'light';
+    });
+
+    // Speech recognition setup
+    let recognition = null;
+    let isListening = false;
+
+    if ('webkitSpeechRecognition' in window) {
+      recognition = new webkitSpeechRecognition();
+      recognition.continuous = false;
+      recognition.interimResults = true;
+
+      recognition.onstart = () => {
+        isListening = true;
+        micButton.classList.add('custom-gradient', 'text-white');
+        micButton.classList.remove('bg-gray-100', 'dark:bg-gray-700', 'text-gray-600', 'dark:text-gray-300');
+      };
+
+      recognition.onend = () => {
+        isListening = false;
+        micButton.classList.remove('custom-gradient', 'text-white');
+        micButton.classList.add('bg-gray-100', 'dark:bg-gray-700', 'text-gray-600', 'dark:text-gray-300');
+      };
+
+      recognition.onresult = (event) => {
+        const transcript = Array.from(event.results)
+          .map(result => result[0])
+          .map(result => result.transcript)
+          .join('');
+        
+        messageInput.value = transcript;
+      };
+
+      recognition.onerror = (event) => {
+        console.error('Speech recognition error:', event.error);
+        recognition.stop();
+      };
+
+      const micButton = document.getElementById('micButton');
+      micButton.addEventListener('click', () => {
+        if (isListening) {
+          recognition.stop();
+        } else {
+          messageInput.value = '';
+          recognition.start();
+        }
+      });
+    } else {
+      const micButton = document.getElementById('micButton');
+      micButton.style.display = 'none';
+      console.warn('Speech recognition not supported in this browser');
+    }
+
+    createWelcomeMessage();
+    messageInput.focus();
+  </script>
 </body>
 </html>
